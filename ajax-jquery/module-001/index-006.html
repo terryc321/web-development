@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery AJAX example 006</title>    
+  </head>
+  
+  <body>
+    <p> constantly update page using javascript timer to make ajax requests </p>
+    <div id="contents"></div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script>
+
+      var contents = $('#contents');
+
+      setInterval(function (){
+	  console.log("1 second")
+
+	  // xhr 
+	  $.ajax({
+	      url : 'file.txt',
+	      cache : false , 
+	      success : function(data){
+		  console.log("contents : " , data);
+		  // set contents div text with data from file
+		  contents.text(data);
+	      },
+	      error : function(){
+		  console.log('something went wrong')
+	      }	  
+	  });	  
+      },1000);
+      
+      
+      
+    </script>
+  </body>
+</html>
+
+

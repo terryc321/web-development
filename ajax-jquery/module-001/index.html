@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery AJAX</title>    
+  </head>
+  <body>
+
+    <!--               // double slash works http https    --->
+    <!--             jquery minimised javascript files     --->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script> -->
+    <script src="jquery.min.js"></script>
+    <script>
+
+      console.log('Hello ');
+      var name = 'Alex' ;
+      // jQuery.ajax();
+      // jQuery.abcdefg();
+      // also $ dollar is alias for jQuery
+
+      // xhr 
+      $.ajax({
+	  url: './file.txt' ,
+	  success : function (data){
+	      console.log("contents : " , data );
+	  },
+	  error : function (){
+	      console.log("something went wrogn !");
+	  }
+      });
+
+      console.log("we should have got file.txt");
+
+      
+    </script>
+
+<p>    get a web server up and running - ok - localhost</p>
+    
+<p>    mysql-client mysql-server mysql-workbench</p>
+
+<p>    postgresql</p>
+
+<p>    sqlite</p>
+    
+<p>    mysqld will log errors to /var/lib/mysql/debian.err</p>
+
+<p>    mysqld is running as pid 1682972</p>
+
+<p>    less /var/www/html/index.html</p>
+
+<p>    sudo /etc/init.d/apache2 restart</p>
+<p>Restarting apache2 (via systemctl): apache2.service.</p>
+
+<p>    https://www.php.net/manual/en/function.phpinfo.php</p>
+
+<p>    google cdn sites</p>
+    
+<p>    https://developers.google.com/speed/libraries#jquery</p>
+    
+<p>    ajax jquery</p>
+    
+<p>    https://api.jquery.com/jQuery.ajax/</p>
+    
+<p>    https://alison.com/topic/learn/138203/introduction-to-web-development</p>
+
+<p>    make ajax-jquery in </p>
+    
+<p>    sudo mkdir -pv /var/www/html/ajax-jquery/</p>
+
+<p>setup a file watcher to copy this file to /var/www/html/ajax-jquery/module-001/ each time </p>
+
+
+  </body>
+</html>
+
+

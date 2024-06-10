@@ -1,0 +1,21 @@
+
+
+Having completed this module, you will be able to:
+
+Lists the advantages of using  jQuery, Ajax and JSON 
+
+State the main features of the jQuery library
+
+Discuss the various methods of sending Ajax requests 
+
+Summarise the basics of working with JSON 
+
+Explain the process of creating a web chat application 
+
+Describe how to develop search functionality for a website
+
+
+jquery ajax api 
+
+https://api.jquery.com/jQuery.ajax/
+

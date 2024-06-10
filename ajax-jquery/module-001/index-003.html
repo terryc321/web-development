@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery AJAX example 001</title>    
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script>
+      // xhr 
+      $.ajax({
+	  url : 'file.txt',
+	  success : function(data){
+	      console.log("contents : " , data);
+	  },
+	  error : function(){
+	      console.log('something went wrong')
+	  }	  
+      });
+    </script>
+  </body>
+</html>
+
+

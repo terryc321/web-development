@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <title>jQuery AJAX example 007</title>    
+  </head>
+  
+  <body>
+    <p> get and put requests  </p>
+    <div id="contents"></div>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
+    <script>
+
+      // register user on urls using POST
+      // get request helpful for example - get a specific page number
+      // GET request should not alter database
+      $.ajax({
+	  url : 'file.php',
+	  type : 'GET' , 
+	  data : { name : 'Alex' } , 
+	  success : function (data){
+	      console.log(data);
+	  }
+      });
+
+
+      $.ajax({
+	  url : 'file.php',
+	  type : 'POST' , 
+	  data : { name : 'Alex' } , 
+	  success : function (data){
+	      console.log(data);
+	  }
+      });
+
+      
+    </script>
+  </body>
+</html>
+
+
+
+
