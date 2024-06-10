@@ -1,0 +1,6 @@
+
+This is a file
+
+ajax works on the client side , usually just one domain
+
+this file has changed agains...

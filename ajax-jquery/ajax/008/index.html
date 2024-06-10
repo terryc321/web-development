@@ -4,6 +4,8 @@
   <head>
     <title>jQuery AJAX example 008</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
   </head>
   
   <body>
@@ -19,7 +21,7 @@
 
     <section id="main">The main section area Hello </section>
     
-    <p> get and put requests  </p>
+    <!-- <p> get and put requests  </p> -->
     <div id="contents"></div>
         
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"> </script>
@@ -52,10 +54,14 @@
       
       app.init = function(){
 	  console.log('app init run.');
+	  app.loadPage('home');
 	  // function runs every time a tab is clicked
 	  app.nav.on('click',function(){
 	      var page = $(this)
-	      app.loadPage(page);
+	      //app.loadPage(page);
+	      console.log('page = ' , page)
+	      console.log('actual page = ' , page.data('page'))
+	      app.loadPage(page.data('page'));
 	  });
       }();
       
